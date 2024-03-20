@@ -47,9 +47,6 @@ nav {
   }
 }
 
-.card-quantity {
-}
-
 .basket-list {
   position: fixed;
   top: 50%;
@@ -82,4 +79,10 @@ cursor: pointer;
     top: 50%;
     opacity: 1;
   }
+}
+
+.basket-quantity{
+  cursor: pointer;
+  vertical-align: middle;
+  color: #26a69a;
 }

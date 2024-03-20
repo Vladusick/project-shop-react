@@ -47,6 +47,36 @@ function Shop() {
     setOrder(newOrder);
   };
 
+  const incQuantity = (itemId) => {
+    const newOrder = order.map((el) => {
+      if (el.offerId === itemId) {
+        const newQuantity = el.quantity + 1;
+        return {
+          ...el,
+          quantity: newQuantity,
+        };
+      } else {
+        return el;
+      }
+    });
+    setOrder(newOrder);
+  };
+
+  const decQuantity = (itemId) => {
+    const newOrder = order.map((el) => {
+      if (el.offerId === itemId) {
+        const newQuantity = el.quantity - 1;
+        return {
+          ...el,
+          quantity: newQuantity >= 0 ? newQuantity : 0,
+        };
+      } else {
+        return el;
+      }
+    });
+    setOrder(newOrder);
+  };
+
   useEffect(function getGoods() {
     fetch(API_URL, {
       headers: {
@@ -73,6 +103,8 @@ function Shop() {
           order={order}
           handleBasketShow={handleBasketShow}
           removeFromBasket={removeFromBasket}
+          incQuantity={incQuantity}
+          decQuantity={decQuantity}
         />
       )}
     </main>

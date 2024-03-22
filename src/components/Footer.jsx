@@ -8,6 +8,7 @@ function Footer() {
             className="grey-text text-lighten-4 right"
             href="https://github.com/Vladusick/project-shop-react"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Repo
           </a>

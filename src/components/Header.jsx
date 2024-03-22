@@ -12,6 +12,7 @@ function Header() {
             <a
               href="https://github.com/Vladusick/project-shop-react"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Repo
             </a>

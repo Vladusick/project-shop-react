@@ -4,6 +4,7 @@ Shop (Simple React project)
 - Добавление товаров в корзину
 - Просмотр корзины
 - Изменение количества товаров
+- Удаление товаров из корзины
 
 Посмотреть проект на github pages: https://vladusick.github.io/project-shop-react/
 

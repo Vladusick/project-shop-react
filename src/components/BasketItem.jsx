@@ -10,7 +10,7 @@ function BasketItem(props) {
   } = props;
   return (
     <li className="collection-item">
-      {displayName}{" "}
+      {displayName} <br />
       <i
         className="material-icons basket-quantity"
         onClick={() => decQuantity(offerId)}

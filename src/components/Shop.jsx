@@ -101,7 +101,13 @@ function Shop() {
     <main className="container content">
       <Cart quantity={order.length} handleBasketShow={handleBasketShow} />
       {loading ? (
-        <Preloader />
+        <>
+          <p style={{ textAlign: "center" }}>
+            Приложение работает. Бывает, что первый раз api-сервис долго отдает
+            данные.
+          </p>
+          <Preloader />
+        </>
       ) : (
         <GoodsList goods={goods} addToBasket={addToBasket} />
       )}
